@@ -1,4 +1,4 @@
-# Quasar App (quasar-node-electron)
+# Quasar App (inspire-se)
 
 A Quasar Framework app
 

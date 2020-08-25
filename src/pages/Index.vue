@@ -44,8 +44,8 @@ export default {
   data () {
     return {
       morphGroupModel: 'btn',
-      text: {},
-      author: {}
+      text: '',
+      author: ''
     }
   },
 
@@ -54,10 +54,10 @@ export default {
       this.morphGroupModel = nextMorphStep[this.morphGroupModel]
     },
     inspire () {
-      this.request('http://127.0.0.1:3000/')
+      this.request('/')
     },
     ping () {
-      this.request('http://127.0.0.1:3000/ping')
+      this.request('/ping')
     },
     async request (url) {
       try {

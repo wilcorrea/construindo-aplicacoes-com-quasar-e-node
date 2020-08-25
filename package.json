@@ -1,14 +1,15 @@
 {
-  "name": "quasar-node-electron",
+  "name": "inspire-se",
   "version": "0.0.1",
   "description": "A Quasar Framework app",
   "productName": "Quasar App",
   "author": "William Correa <wilcorrea@gmail.com>",
   "private": true,
   "scripts": {
-    "build": "quasar build",
-    "start": "node server.js",
-    "heroku-postbuild": "yarn && yarn build",
+    "dev": "quasar dev",
+    "emulate": "quasar dev -m electron",
+    "spa": "quasar build",
+    "electron": "quasar build -m electron",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },

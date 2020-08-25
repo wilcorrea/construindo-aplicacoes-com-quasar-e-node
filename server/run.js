@@ -5,16 +5,16 @@ fastify.register(require('fastify-cors'), {
   // put your options here
 })
 
-// Declare a route
+// Declare the routes
 fastify
-  .get('/', async (request, reply) => {
+  .get('/', async () => {
     const quoteGenerator = require('inspirational-quotes')
     return {
       status: 'success',
       data: quoteGenerator.getQuote()
     }
   })
-  .get('/ping', async (request, reply) => {
+  .get('/ping', async () => {
     return {
       status: 'success',
       data: 'pong'
