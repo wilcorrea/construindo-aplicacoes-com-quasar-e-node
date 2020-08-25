@@ -6,6 +6,7 @@
   "author": "William Correa <wilcorrea@gmail.com>",
   "private": true,
   "scripts": {
+    "start": "node server",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
